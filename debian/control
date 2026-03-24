@@ -1,0 +1,36 @@
+Source: duo-pinmux
+Section: utils
+Priority: optional
+Maintainer: Julie Hill <queenkjuul@pm.me>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/queenkjuul/duo-pinmux
+Rules-Requires-Root: no
+
+Package: milkv-pinmux-duos
+Provides: duo-pinmux
+Conflicts: duo-pinmux
+Replaces: duo-pinmux
+Architecture: riscv64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tool to configure pinmux on Milk-V Duo S (SG2000)
+ Pinmux config for Milk-V Duo S (SG2000)
+
+Package: milkv-pinmux-duo256m
+Provides: duo-pinmux
+Conflicts: duo-pinmux
+Replaces: duo-pinmux
+Architecture: riscv64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tool to configure pinmux on Milk-V Duo 256 (SG2002)
+ Pinmux config for Milk-V Duo 256MB (SG2002)
+
+Package: milkv-pinmux-duo
+Provides: duo-pinmux
+Conflicts: duo-pinmux
+Replaces: duo-pinmux
+Architecture: riscv64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tool to configure pinmux on Milk-V Duo
+ Pinmux config for Milk-V Duo (CV1800B)
+

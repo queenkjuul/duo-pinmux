@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) -C $(CURDIR)/duos
+	$(MAKE) -C $(CURDIR)/duo256m
+	$(MAKE) -C $(CURDIR)/duo
+
+override_dh_auto_install:
+	mkdir -p debian/milkv-pinmux-duos/usr/bin
+	cp duos/duo-pinmux debian/milkv-pinmux-duos/usr/bin/milkv-pinmux-duos
+	mkdir -p debian/milkv-pinmux-duo256m/usr/bin
+	cp duo256m/duo-pinmux debian/milkv-pinmux-duo256m/usr/bin/
+	mkdir -p debian/milkv-pinmux-duo/usr/bin
+	cp duo/duo-pinmux debian/milkv-pinmux-duo/usr/bin/
+
+clean:
+	dh_clean
+	rm -rf debian/.debhelper || true
+	rm debian/*debhelper* || true
+	rm debian/*substvars || true
+	rm debian/files || true

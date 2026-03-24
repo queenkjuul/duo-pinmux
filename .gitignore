@@ -1,0 +1,15 @@
+*.build
+*.buildinfo
+*.changes
+*.deb
+*.dsc
+*.tar.xz
+*.ddeb
+duo-pinmux
+debian/.debhelper
+debian/*debhelper*
+debian/files
+debian/*.substvars
+debian/milkv-pinmux-duo/
+debian/milkv-pinmux-duos/
+debian/milkv-pinmux-duo256m/

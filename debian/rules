@@ -10,7 +10,7 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	mkdir -p debian/milkv-pinmux-duos/usr/bin
-	cp duos/duo-pinmux debian/milkv-pinmux-duos/usr/bin/milkv-pinmux-duos
+	cp duos/duo-pinmux debian/milkv-pinmux-duos/usr/bin/
 	mkdir -p debian/milkv-pinmux-duo256m/usr/bin
 	cp duo256m/duo-pinmux debian/milkv-pinmux-duo256m/usr/bin/
 	mkdir -p debian/milkv-pinmux-duo/usr/bin

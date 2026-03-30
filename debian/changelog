@@ -1,3 +1,39 @@
+duo-pinmux (1.0.4) jammy; urgency=medium
+
+  * Fix binary filename
+
+ -- Julie Hill <queenkjuul@pm.me>  Mon, 30 Mar 2026 06:45:57 +0000
+
+duo-pinmux (1.0.3) jammy; urgency=medium
+
+  * Added new entry to changelog
+
+ -- Julie Hill <queenkjuul@pm.me>  Mon, 30 Mar 2026 05:28:17 +0000
+
+duo-pinmux (1.0.2ubuntu2) jammy; urgency=medium
+
+  * Launchpad fixes (2)
+
+ -- Julie Hill <queenkjuul@pm.me>  Mon, 30 Mar 2026 05:25:27 +0000
+
+duo-pinmux (1.0.2ubuntu1) jammy; urgency=medium
+
+  * Launchpad fixes
+
+ -- Julie Hill <queenkjuul@pm.me>  Sun, 29 Mar 2026 23:38:35 +0000
+
+duo-pinmux (1.0.2) jammy; urgency=medium
+
+  * Launchpad fixes
+
+ -- Julie Hill <queenkjuul@pm.me>  Sun, 29 Mar 2026 23:16:39 +0000
+
+duo-pinmux (1.0.1) jammy; urgency=medium
+
+  * Increment for PPA fixes
+
+ -- Julie Hill <queenkjuul@pm.me>  Sun, 29 Mar 2026 21:26:17 +0000
+
 duo-pinmux (1.0.0) jammy; urgency=medium
 
   * Initial Release.

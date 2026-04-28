@@ -11,10 +11,13 @@ override_dh_auto_build:
 override_dh_auto_install:
 	mkdir -p debian/milkv-pinmux-duos/usr/bin
 	cp duos/duo-pinmux debian/milkv-pinmux-duos/usr/bin/
+	ln -s duo-pinmux debian/milkv-pinmux-duos/usr/bin/pinmux
 	mkdir -p debian/milkv-pinmux-duo256m/usr/bin
 	cp duo256m/duo-pinmux debian/milkv-pinmux-duo256m/usr/bin/
+	ln -s duo-pinmux debian/milkv-pinmux-duo256m/usr/bin/pinmux
 	mkdir -p debian/milkv-pinmux-duo/usr/bin
 	cp duo/duo-pinmux debian/milkv-pinmux-duo/usr/bin/
+	ln -s duo-pinmux debian/milkv-pinmux-duo/usr/bin/pinmux
 
 clean:
 	dh_clean
